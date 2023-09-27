@@ -6,6 +6,7 @@ import LogIn from "../src/components/LogIn/LogIn";
 import ProductsList from "./components/ProductsList/ProductsList";
 import ProductDetail from "../src/components/ProductDetails/ProductDetail";
 import AddUpdateProduct from "./components/addUpdateProduct/AddUpdateProduct";
+import OrderProduct from "../src/components/Orders/OrderProduct";
 
 const appTheme = createTheme({
   palette: {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/editProduct/:id" element={<AddUpdateProduct />} />
             <Route path="/addProduct" element={<AddUpdateProduct />} />
+            <Route path="/placeOrder" element={<OrderProduct />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
